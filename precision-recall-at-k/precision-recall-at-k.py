@@ -12,9 +12,6 @@ def precision_recall_at_k(recommended, relevant, k):
         if num in relevant:
             allRelevant += 1
 
-    print(allRelevant)
-    print(k)
-
     precision = allRelevant / k
     recall = allRelevant / len(relevant)
 
